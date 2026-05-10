@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>Simple Calculator</h2>
+<div class="container">
 
-<input id="a" placeholder="First number">
-<input id="b" placeholder="Second number">
+    <div>
+        <h2>Simple Calculator</h2>
 
-<br><br>
+        <input id="a" placeholder="First number">
+        <input id="b" placeholder="Second number">
 
-<button onclick="calc('+')">+</button>
-<button onclick="calc('-')">-</button>
-<button onclick="calc('*')">*</button>
-<button onclick="calc('/')">/</button>
+        <br><br>
 
-<p id="result"></p>
+        <button onclick="calc('+')">+</button>
+        <button onclick="calc('-')">-</button>
+        <button onclick="calc('*')">*</button>
+        <button onclick="calc('/')">/</button>
+
+        <p id="result"></p>
+    </div>
+
+    <img src="math.jpg" width="400">
+
+</div>
 
 <script>
 function calc(op) {
@@ -32,7 +41,8 @@ function calc(op) {
             break;
     }
 
-    document.getElementById("result").innerText = "Result = " + result;
+    document.getElementById("result").innerText =
+    "Result = " + result;
 }
 </script>
 
